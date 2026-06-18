@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suraj Chauhan | Bioinformatics & Computational Biology</title>
+  <meta name="description" content="Portfolio of Suraj Chauhan, BS-MS researcher at IISER Bhopal. Specializing in Bioinformatics, Computational Biology, Meta-Omics, and DNA Nanotechnology.">
+  
+  <!-- Preload fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Glows -->
+  <div class="radial-glow glow-1"></div>
+  <div class="radial-glow glow-2"></div>
+  <div class="radial-glow glow-3"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Header / Navigation -->
+  <header id="main-header" class="glass-nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        Suraj Chauhan
+      </a>
+      
+      <nav id="navbar" class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link active">About</a></li>
+          <li><a href="#research" class="nav-link">Research</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#leadership" class="nav-link">Leadership</a></li>
+          <li><a href="#awards" class="nav-link">Awards</a></li>
+          <li><a href="#courses" class="nav-link">Courses</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="mobile-menu-toggle" class="mobile-toggle-btn" aria-label="Open Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span> Available for Research & Collaborations
+        </div>
+        <h1 class="hero-title">
+          Hi, I am <span class="gradient-text">Suraj Chauhan</span>
+        </h1>
+        <h2 class="hero-subtitle">
+          I'm a <span id="typing-text" class="typed-cursor">Bioinformatician</span>
+        </h2>
+        <p class="hero-description">
+          From microbial communities to regulatory genomes, I am fascinated by how algorithms can extract biological meaning from vast oceans of omics data. Multi-omics, machine learning, and microbiome research are where my curiosity feels most at home.
+        </p>
+        <div class="hero-ctas">
+          <a href="assets/Suraj_Chauhan_CV_protected.pdf" class="btn btn-primary" download>
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            Get In Touch <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/suraj-chauhan-21" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/suraj-chauhan-5a0664246" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:surajc21@iiserb.ac.in" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="dna-container">
+          <!-- Glassmorphic Profile Picture Card -->
+          <div class="glass-card helix-card" style="padding: 1.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden;">
+            <div style="width: 250px; height: 250px; border-radius: 50%; overflow: hidden; border: 4px solid var(--primary-glow); box-shadow: var(--shadow-glow); margin-bottom: 1rem;">
+              <img src="assets/suraj_profile.jpeg" alt="Suraj Chauhan Profile Picture" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <p style="text-align: center; color: var(--text-secondary); font-size: 0.95rem; font-style: italic; line-height: 1.5; padding: 0.5rem; margin: 0;">
+              "When away from lab, you'll often find me spending time with my pawed friends, exploring nature, and enjoying the simple joys of animal companionship."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section scroll-reveal">
+      <div class="section-header">
+        <h2 class="section-title">Academic Journey & Bio</h2>
+        <p class="section-subtitle">A snapshot of my education and active pursuits</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-info">
+          <h3>Computational & Lab Science</h3>
+          <p>
+            I recently completed a five-year Integrated BS-MS Dual Degree from IISER Bhopal with a specialization in Bioinformatics and Computational Biology. I am actively seeking PhD and research opportunities in genomics, multi-omics, microbiome science, machine learning, and systems biology. My experience spans computational analysis of large-scale sequencing datasets, multi-omics integration, and molecular biology techniques.
+          </p>
+
+          <!-- Relevant Coursework -->
+          <div class="relevant-coursework">
+            <h4>Relevant Coursework:</h4>
+            <div class="coursework-tags">
+              <span class="coursework-tag">Bioinformatics</span>
+              <span class="coursework-tag">Advances in Omics & Microbiology</span>
+              <span class="coursework-tag">Recombinant DNA Technology</span>
+              <span class="coursework-tag">Biophysics & Bioinstrumentation</span>
+              <span class="coursework-tag">Learning Memory & Cognition</span>
+              <span class="coursework-tag">Evolutionary Ecology</span>
+              <span class="coursework-tag">Biochemistry & Biomolecules</span>
+            </div>
+          </div>
+
+          <!-- Languages Spoken -->
+          <div class="languages-spoken">
+            <h4>Languages:</h4>
+            <div class="lang-tags">
+              <span class="lang-tag">English (Professional)</span>
+              <span class="lang-tag">Hindi (Native)</span>
+              <span class="lang-tag">Urdu (Conversational)</span>
+              <span class="lang-tag">Sanskrit (Conversational)</span>
+              <span class="lang-tag">German (Elementary)</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-timeline-visual">
+          <!-- Timeline -->
+          <div class="about-timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Dec 2021 – Apr 2026</div>
+              <h4 class="timeline-title">BS-MS Dual Degree</h4>
+              <p class="timeline-institution">Indian Institute of Science Education and Research, Bhopal</p>
+              <p class="timeline-desc">Specializing in Biological Sciences, Computational Biology, and Meta-Omics. Maintaining an excellent academic record while participating in institutional leadership roles.</p>
+              <div class="timeline-attachments">
+                <a href="assets/Suraj_Chauhan_Master_Thesis__.pdf" target="_blank" class="timeline-attachment-link"><i class="fa-solid fa-book"></i> Master's Thesis</a>
+                <a href="assets/Transcript___2_.pdf" target="_blank" class="timeline-attachment-link"><i class="fa-solid fa-file-pdf"></i> Academic Transcript</a>
+                <a href="assets/Medium_instruction_English.pdf" target="_blank" class="timeline-attachment-link"><i class="fa-solid fa-circle-info"></i> Medium of Instruction (EN)</a>
+              </div>
+            </div>
+            
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Mar 2020</div>
+              <h4 class="timeline-title">Secondary High School (Class XII)</h4>
+              <p class="timeline-institution">AMU City School, Aligarh | 93.4%</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2018</div>
+              <h4 class="timeline-title">High School (Class X)</h4>
+              <p class="timeline-institution">SVM Senior Secondary School, Aligarh | 95.2%</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Aug 2025 – Present</div>
+              <h4 class="timeline-title">Teaching Assistant (BIO 309: Microbiology)</h4>
+              <p class="timeline-institution">IISER Bhopal | Prof. Vineet K. Sharma</p>
+              <p class="timeline-desc">Assisting undergraduate students with microbiology fundamentals, organizing lab practicals, and grading assignments.</p>
+            </div>
+          </div>
+
+          <!-- IISER Bhopal Picture Card -->
+          <div class="glass-card institute-card">
+            <div class="institute-img-wrapper">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Main_entrance_gate_of_IISER_Bhopal.jpg" alt="IISER Bhopal Main Gate" class="institute-img">
+            </div>
+            <div class="institute-overlay">
+              <span class="institute-tag"><i class="fa-solid fa-building-columns"></i> IISER Bhopal Campus</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Experience Section -->
+    <section id="research" class="research-section scroll-reveal">
+      <div class="section-header">
+        <h2 class="section-title">Research Experience</h2>
+        <p class="section-subtitle">Investigating host-microbiome interactions, animal behavior, and bio-nanodevices</p>
+      </div>
+
+      <div class="research-showcase">
+        <!-- Main Research Project -->
+        <div class="research-main glass-card">
+          <div class="research-header">
+            <span class="research-tag">Meta Bio-Sys Lab</span>
+            <span class="research-duration">May 2025 – Present</span>
+          </div>
+          <h3>Comparative Gut Microbiome Analysis in Primates Lineage</h3>
+          <p class="research-advisor"><strong>Principal Investigator:</strong> Prof. Vineet Kumar Sharma, IISER Bhopal</p>
+          
+          <div class="research-grid">
+            <div class="research-info">
+              <p>Conducting large-scale metagenomic analyses of over 5,200 Whole Genome Sequencing (WGS) samples of non-human primates and humans to map the gut microbiome.</p>
+              <ul>
+                <li><strong>Metagenomic Reconstruction:</strong> Assembling and binning genomes to reconstruct over 2,500 newly identified metagenome-assembled genomes (MAGs).</li>
+                <li><strong>Lineage-Specific Biomarkers:</strong> Functionally annotating adaptation features, including antimicrobial resistance, vitamin biosynthesis pathways, bile acid metabolism, and CAZymes (Carbohydrate-Active Enzymes).</li>
+              </ul>
+            </div>
+            <div class="research-stats">
+              <div class="stat-box">
+                <span class="stat-num">5200+</span>
+                <span class="stat-label">WGS Samples Analyzed</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-num">2500+</span>
+                <span class="stat-label">New MAGs Reconstructed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Projects Grid -->
+        <div class="research-sub-grid">
+          <div class="glass-card research-sub-card">
+            <span class="research-duration">May 2024 – Aug 2024</span>
+            <h4>Human Perception on Free Ranging Dogs in India</h4>
+            <p class="advisor">Dog Lab, IISER Kolkata | Dr. Anindita Bhadra</p>
+            <p>Examined human perceptions of stray dogs across different regions of India through experimental surveys and data analysis. The study gained national and international recognition for its innovative approach to studying human-dog interactions.</p>
+          </div>
+
+          <div class="glass-card research-sub-card">
+            <span class="research-duration">May 2023 – July 2023</span>
+            <h4>DNA Nanotechnology based RAM</h4>
+            <p class="advisor">Dr. Roy's Lab | Dr. Kuntal Roy</p>
+            <p>Developed a DNA-based storage device using nanopores and nanoelectronics. Gained hands-on experience with atomic force microscopy (AFM), XRD, spin coater, annealer, and NMR spectroscopy.</p>
+          </div>
+
+          <div class="glass-card research-sub-card">
+            <span class="research-duration">Dec 2022 – Jan 2023</span>
+            <h4>Biocuration of Rare-disease</h4>
+            <p class="advisor">In-machino | Dr. Parthiban Srinivasan</p>
+            <p>Curated clinical datasets on Hashimoto encephalopathy. Utilized BLAST and AlphaFold for comparative genomics and structure-function predictions, mapping therapeutic targets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section scroll-reveal">
+      <div class="section-header">
+        <h2 class="section-title">Projects & Repositories</h2>
+        <p class="section-subtitle">Bioinformatics pipelines, exome sequencing, and transcriptomics codebases</p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All Repositories</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="r">R Language</button>
+        <button class="filter-btn" data-filter="shell">Shell/Other</button>
+      </div>
+
+      <!-- Repositories Grid -->
+      <div class="projects-grid">
+        <!-- New Project 1 -->
+        <article class="glass-card project-card" data-category="python">
+          <div class="project-header">
+            <i class="fa-solid fa-leaf project-icon"></i>
+            <span class="project-lang lang-python">Python</span>
+          </div>
+          <h3 class="project-title">Plant-Disease-Prediction</h3>
+          <p class="project-desc">
+            A machine learning project using Python to predict plant diseases based on image data and related features, providing an automated solution for agricultural diagnostics.
+          </p>
+          <div class="project-footer">
+            <a href="https://github.com/suraj-chauhan-21/Plant-Disease-Prediction-using-Machine-Learning-" target="_blank" rel="noopener noreferrer" class="project-link">
+              View Repository <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- New Project 2 -->
+        <article class="glass-card project-card" data-category="python">
+          <div class="project-header">
+            <i class="fa-solid fa-pills project-icon"></i>
+            <span class="project-lang lang-python">Python</span>
+          </div>
+          <h3 class="project-title">QSAR_Forge</h3>
+          <p class="project-desc">
+            A comprehensive machine learning pipeline for drug discovery using Quantitative Structure-Activity Relationship (QSAR) modeling to predict the biological activity of chemical compounds.
+          </p>
+          <div class="project-footer">
+            <a href="https://github.com/suraj-chauhan-21/QSAR_Forge-Qsar-ml-drug-discovery-" target="_blank" rel="noopener noreferrer" class="project-link">
+              View Repository <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 1 -->
+        <article class="glass-card project-card" data-category="python">
+          <div class="project-header">
+            <i class="fa-solid fa-dna project-icon"></i>
+            <span class="project-lang lang-python">Python</span>
+          </div>
+          <h3 class="project-title">Whole-Exome-Analysis-</h3>
+          <p class="project-desc">
+            A reproducible, end-to-end pipeline for Whole-Exome Sequencing (WES) analysis, from raw SRA reads through aligned BAM, base quality recalibration, variant calling, filtering, and functional annotation.
+          </p>
+          <div class="project-footer">
+            <a href="https://github.com/suraj-chauhan-21/Whole-Exome-Analysis-" target="_blank" rel="noopener noreferrer" class="project-link">
+              View Repository <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="glass-card project-card" data-category="python">
+          <div class="project-header">
+            <i class="fa-solid fa-map-location-dot project-icon"></i>
+            <span class="project-lang lang-python">Python</span>
+          </div>
+          <h3 class="project-title">Spatial-RNA-Seq-Transcription-</h3>
+          <p class="project-desc">
+            A comprehensive, reproducible workflow for spatial RNA-seq data analysis using Python-based tools (Squidpy, Scanpy, Spatialdata) to analyze spatial transcriptional organization in tissue.
+          </p>
+          <div class="project-footer">
+            <a href="https://github.com/suraj-chauhan-21/Spatial-RNA-Seq-Transcription-" target="_blank" rel="noopener noreferrer" class="project-link">
+              View Repository <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="glass-card project-card" data-category="r">
+          <div class="project-header">
+            <i class="fa-solid fa-chart-line project-icon"></i>
+            <span class="project-lang lang-r">R</span>
+          </div>
+          <h3 class="project-title">ATAC-Sequencing-</h3>
+          <p class="project-desc">
+            A reproducible workflow for analyzing 10x Genomics single-cell ATAC-seq (scATAC-seq) data using the Signac + Seurat framework in R. Includes chromatoid open accessibility tracking.
+          </p>
+          <div class="project-footer">
+            <a href="https://github.com/suraj-chauhan-21/ATAC-Sequencing-" target="_blank" rel="noopener noreferrer" class="project-link">
+              View Repository <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="glass-card project-card" data-category="python">
+          <div class="project-header">
+            <i class="fa-solid fa-flask-vial project-icon"></i>
+            <span class="project-lang lang-python">Jupyter Notebook</span>
+          </div>
+          <h3 class="project-title">-Single_RNA_seq-Scanpy-</h3>
+          <p class="project-desc">
+            An open-source Python toolkit repository implementing a complete pipeline for single-cell RNA sequencing (scRNA-seq) data analysis and clustering using Scanpy.
+          </p>
+          <div class="project-footer">
+            <a href="https://github.com/suraj-chauhan-21/-Single_RNA_seq-Scanpy-" target="_blank" rel="noopener noreferrer" class="project-link">
+              View Repository <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="glass-card project-card" data-category="shell">
+          <div class="project-header">
+            <i class="fa-solid fa-terminal project-icon"></i>
+            <span class="project-lang lang-shell">Shell</span>
+          </div>
+          <h3 class="project-title">Bulk-RNA-seq</h3>
+          <p class="project-desc">
+            A comprehensive, end-to-end automated Bash workflow for analyzing bulk RNA-sequencing data, transforming raw FASTQ files to differential gene expression matrices.
+          </p>
+          <div class="project-footer">
+            <a href="https://github.com/suraj-chauhan-21/Bulk-RNA-seq" target="_blank" rel="noopener noreferrer" class="project-link">
+              View Repository <i class="fa-solid fa-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Additional Academic Projects -->
+      <div class="academic-projects-container">
+        <h3 class="subsection-title">Academic Research Projects</h3>
+        <div class="academic-projects-grid">
+          <div class="glass-card academic-project-card">
+            <h4>Social Competition Effect on True/False Recognition</h4>
+            <p class="advisor">Supervisor: Dr. Aditi Jublie</p>
+            <p class="project-text">Explored how competitive group settings influence true and false memory recognition. Found that competition reduces overall accuracy but also lowers false memories by enhancing detail-focused recall.</p>
+          </div>
+
+          <div class="glass-card academic-project-card">
+            <h4>CRISPR-Evasive Lytic LE1 Phage</h4>
+            <p class="advisor">Supervisor: Dr. Vikas Jain</p>
+            <p class="project-text">Modified the LE1 phage to target Leptospira. Incorporated anti-CRISPR genes (AcrIIA4, AcrIF7) to inhibit bacterial CRISPR-Cas systems and defense islands, increasing bacterial lysis.</p>
+          </div>
+
+          <div class="glass-card academic-project-card">
+            <h4>HIV-1 Cell Line Impact Analysis</h4>
+            <p class="advisor">Supervisor: Dr. Nagarjun Vijay</p>
+            <p class="project-text">Investigated the impact of altered CD3G expression in T lymphocytes on immune function and viral progression using single-cell RNA-seq (Seurat).</p>
+            <a href="https://github.com/suraj-chauhan-21/HIV-1-Nef-and-SERINC5-Interaction" target="_blank" rel="noopener noreferrer" class="project-link" style="margin-top:0.75rem;display:inline-flex;align-items:center;gap:0.4rem;font-size:0.85rem;"><i class="fa-brands fa-github"></i> HIV-1-Nef-and-SERINC5-Interaction</a>
+          </div>
+
+          <div class="glass-card academic-project-card">
+            <h4>Sneezing Patterns in Free-Ranging Dogs</h4>
+            <p class="advisor">Supervisor: Dr. Vinita Gowda</p>
+            <p class="project-text">Behavioral study analyzing sneezing frequency across social and solitary settings in dogs using structured observations and ethogram-based coding.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section scroll-reveal">
+      <div class="section-header">
+        <h2 class="section-title">Skills & Toolkit</h2>
+        <p class="section-subtitle">My toolbox across wet lab, dry lab, and data diagnostics</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skills-category glass-card">
+          <div class="category-header">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Coding & Analytics</h3>
+          </div>
+          <ul class="skills-list">
+            <li><span>Python (Scanpy, Squidpy, Pandas)</span> <div class="skill-bar"><div class="fill" style="width: 90%;"></div></div></li>
+            <li><span>R (Seurat, Signac, DESeq2)</span> <div class="skill-bar"><div class="fill" style="width: 85%;"></div></div></li>
+            <li><span>Bash & Unix Command Line</span> <div class="skill-bar"><div class="fill" style="width: 90%;"></div></div></li>
+            <li><span>C Language</span> <div class="skill-bar"><div class="fill" style="width: 75%;"></div></div></li>
+            <li><span>Tableau & Power BI</span> <div class="skill-bar"><div class="fill" style="width: 80%;"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skills-category glass-card">
+          <div class="category-header">
+            <i class="fa-solid fa-microscope"></i>
+            <h3>Microscopy & Wet Lab</h3>
+          </div>
+          <ul class="skills-list">
+            <li><span>DNA/RNA Extraction & PCR</span> <div class="skill-bar"><div class="fill" style="width: 95%;"></div></div></li>
+            <li><span>Atomic Force Microscopy (AFM)</span> <div class="skill-bar"><div class="fill" style="width: 85%;"></div></div></li>
+            <li><span>Confocal & TEM / SEM</span> <div class="skill-bar"><div class="fill" style="width: 80%;"></div></div></li>
+            <li><span>Western Blotting & Sanger Sequencing</span> <div class="skill-bar"><div class="fill" style="width: 85%;"></div></div></li>
+            <li><span>Nanodrop & NMR Spectroscopy</span> <div class="skill-bar"><div class="fill" style="width: 75%;"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skills-category glass-card">
+          <div class="category-header">
+            <i class="fa-solid fa-gears"></i>
+            <h3>Omics & Design software</h3>
+          </div>
+          
+          <h4 class="skills-sub-title">Bioinformatics Tools:</h4>
+          <div class="skill-tags" style="margin-bottom: 1.5rem;">
+            <span class="skill-tag">SRA Toolkit</span>
+            <span class="skill-tag">Trimmomatic</span>
+            <span class="skill-tag">FastQC</span>
+            <span class="skill-tag">Bowtie2</span>
+            <span class="skill-tag">Kraken2</span>
+            <span class="skill-tag">MetaPhlAn</span>
+            <span class="skill-tag">HUMAnN3</span>
+            <span class="skill-tag">AlphaFold</span>
+            <span class="skill-tag">BLAST</span>
+            <span class="skill-tag">PyMol</span>
+            <span class="skill-tag">MATLAB</span>
+          </div>
+
+          <h4 class="skills-sub-title">Design, Office & Documentation:</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Canva</span>
+            <span class="skill-tag">Gamma</span>
+            <span class="skill-tag">MS Power Point</span>
+            <span class="skill-tag">Word</span>
+            <span class="skill-tag">Excel</span>
+            <span class="skill-tag">BioRender</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="leadership-section scroll-reveal">
+      <div class="section-header">
+        <h2 class="section-title">Leadership & Community Impact</h2>
+        <p class="section-subtitle">Contributions to student life, animal welfare, and science outreach</p>
+      </div>
+
+      <div class="leadership-cards">
+        <div class="glass-card leadership-card">
+          <div class="leadership-icon"><i class="fa-solid fa-paw"></i></div>
+          <div class="leadership-content">
+            <span class="role-duration">Jun 2025 – Present</span>
+            <h3>Member, Animal Welfare Committee</h3>
+            <p>
+              Co-founded the committee to design and implement canine management plans at IISER Bhopal. Established designated feeding zones and coordinated campaigns that collared and vaccinated 40+ stray dogs.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card leadership-card">
+          <div class="leadership-icon"><i class="fa-solid fa-users"></i></div>
+          <div class="leadership-content">
+            <span class="role-duration">Oct 2023 – Aug 2024</span>
+            <h3>Secretary, Science Council</h3>
+            <p>
+              Dedicated over 250 hours managing STEM clubs, organizing seminars, and coordinating social outreach. Founded the institute's Science Media Centre to boost scientific communication.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card leadership-card">
+          <div class="leadership-icon"><i class="fa-solid fa-atom"></i></div>
+          <div class="leadership-content">
+            <span class="role-duration">Dec 2023 – Feb 2024</span>
+            <h3>Convenor, Singularity 23-24</h3>
+            <p>
+              Led a team of 90 organizers for IISER's annual 7-day science conference. Supervised 5 major talks, 7 technical workshops, and 20 outreach events in regional schools.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card leadership-card">
+          <div class="leadership-icon"><i class="fa-solid fa-landmark"></i></div>
+          <div class="leadership-content">
+            <span class="role-duration">Apr 2023 – Aug 2024</span>
+            <h3>Senate Member, Student Activity Council</h3>
+            <p>
+              Served as a student representative in IISER Bhopal's Academic Senate, advocating for policy reforms and initiating community service projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="awards-section scroll-reveal">
+      <div class="section-header">
+        <h2 class="section-title">Awards, Exams & Honors</h2>
+        <p class="section-subtitle">Milestones in exams and academic competitions</p>
+      </div>
+
+      <div class="awards-grid">
+        <div class="award-card glass-card">
+          <div class="award-badge"><i class="fa-solid fa-trophy"></i></div>
+          <h4>GATE EY 2025</h4>
+          <p class="award-rank">All India Rank: 176</p>
+          <p class="award-desc">Qualified the national exam for Ecology & Evolution master's/doctorate entry.</p>
+          <a href="assets/Suraj__GATE.pdf" target="_blank" class="award-document-link"><i class="fa-solid fa-file-pdf"></i> View Scorecard</a>
+        </div>
+
+        <div class="award-card glass-card">
+          <div class="award-badge"><i class="fa-solid fa-medal"></i></div>
+          <h4>KVPY SB 2022</h4>
+          <p class="award-rank">All India Rank: 106</p>
+          <p class="award-desc">Awarded the prestigious fellowship by the Govt. of India for scientific research careers.</p>
+          <a href="assets/Suraj_Chauhan_KVPY.pdf" target="_blank" class="award-document-link"><i class="fa-solid fa-file-pdf"></i> View Award Letter</a>
+        </div>
+
+        <div class="award-card glass-card">
+          <div class="award-badge"><i class="fa-solid fa-circle-check"></i></div>
+          <h4>CSIR UGC-NET 2025</h4>
+          <p class="award-rank">Qualified (JRF eligibility)</p>
+          <p class="award-desc">Determined eligibility for Junior Research Fellowship and Lectureship nationwide.</p>
+          <a href="assets/Suraj_ChauhanJOINT_CSIR-UGC_NET_JUNE-2025.pdf" target="_blank" class="award-document-link"><i class="fa-solid fa-file-pdf"></i> View Certificate</a>
+        </div>
+
+        <div class="award-card glass-card">
+          <div class="award-badge"><i class="fa-solid fa-award"></i></div>
+          <h4>Gold Medal, Science Congress</h4>
+          <p class="award-rank">National Congress (2018)</p>
+          <p class="award-desc">Awarded for an environmental and sustainability research project.</p>
+        </div>
+
+        <div class="award-card glass-card">
+          <div class="award-badge"><i class="fa-solid fa-ranking-star"></i></div>
+          <h4>Best Achiever Award</h4>
+          <p class="award-rank">AMU City School (2020)</p>
+          <p class="award-desc">Granted for exceptional academic achievements and extracurricular performance.</p>
+        </div>
+
+        <div class="award-card glass-card">
+          <div class="award-badge"><i class="fa-solid fa-medal"></i></div>
+          <h4>Gold Medal, Science Olympiad</h4>
+          <p class="award-rank">Silver Zone (2021)</p>
+          <p class="award-desc">Won first place in the national science competition.</p>
+        </div>
+
+        <div class="award-card glass-card">
+          <div class="award-badge"><i class="fa-solid fa-award"></i></div>
+          <h4>Silver Medal, Kho-Kho</h4>
+          <p class="award-rank">Inter-College Meet (2023)</p>
+          <p class="award-desc">Sports achievement in the inter-college athletic meet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses & MOOCs Section -->
+    <section id="courses" class="courses-section scroll-reveal">
+      <div class="section-header">
+        <h2 class="section-title">Courses &amp; MOOCs</h2>
+        <p class="section-subtitle">Semester-wise coursework and online certifications</p>
+      </div>
+
+      <!-- Coursework Categories -->
+      <div class="semesters-container">
+        <div class="semester-block glass-card">
+          <h4 class="semester-title"><i class="fa-solid fa-laptop-code"></i> Computational Bio &amp; Quant Sciences</h4>
+          <ul class="semester-courses">
+            <li><span class="course-code">ECS102</span> Introduction to Programming</li>
+            <li><span class="course-code">BIO402</span> Bioinformatics</li>
+            <li><span class="course-code">BIO407</span> Biostatistics</li>
+            <li><span class="course-code">BIO417</span> Advances in Omics</li>
+            <li><span class="course-code">MTH101</span> Calculus of One Variable</li>
+            <li><span class="course-code">MTH102</span> Linear Algebra</li>
+            <li><span class="course-code">HSS348</span> Designing Experiments in Cognitive Psychology</li>
+          </ul>
+        </div>
+
+        <div class="semester-block glass-card">
+          <h4 class="semester-title"><i class="fa-solid fa-dna"></i> Molecular Bio, Genetics &amp; Genomics</h4>
+          <ul class="semester-courses">
+            <li><span class="course-code">BIO102</span> Fundamentals of Cell Biology</li>
+            <li><span class="course-code">BIO201</span> Fundamentals of Molecular Biology</li>
+            <li><span class="course-code">BIO202</span> Basic Genetics</li>
+            <li><span class="course-code">BIO301</span> Cell Biology</li>
+            <li><span class="course-code">BIO304</span> Molecular Biology</li>
+            <li><span class="course-code">BIO312</span> Recombinant DNA Technology</li>
+            <li><span class="course-code">BIO405</span> Developmental Biology</li>
+            <li><span class="course-code">BIO311</span> Cell Signaling and Stress Biology</li>
+          </ul>
+        </div>
+
+        <div class="semester-block glass-card">
+          <h4 class="semester-title"><i class="fa-solid fa-atom"></i> Biochemistry &amp; Structural Biology</h4>
+          <ul class="semester-courses">
+            <li><span class="course-code">BIO101</span> Biology I: Biomolecules</li>
+            <li><span class="course-code">BIO303</span> Biochemistry</li>
+            <li><span class="course-code">CHM343</span> Chemistry of Biological Systems</li>
+            <li><span class="course-code">BIO422</span> Biomolecular Metabolism</li>
+            <li><span class="course-code">BIO418</span> Biophysics and Structural Biology</li>
+          </ul>
+        </div>
+
+        <div class="semester-block glass-card">
+          <h4 class="semester-title"><i class="fa-solid fa-microscope"></i> Microbiology, Evolution &amp; Ecology</h4>
+          <ul class="semester-courses">
+            <li><span class="course-code">BIO203</span> Biology V: Diversity of Life I</li>
+            <li><span class="course-code">BIO204</span> Biology VI: Diversity of Life II</li>
+            <li><span class="course-code">BIO406</span> Evolutionary Ecology</li>
+            <li><span class="course-code">BIO411</span> Advances in Microbiology</li>
+            <li><span class="course-code">EES202</span> The Evolution of the Earth</li>
+            <li><span class="course-code">BIO414</span> Behavioral Biology</li>
+          </ul>
+        </div>
+
+        <div class="semester-block glass-card">
+          <h4 class="semester-title"><i class="fa-solid fa-shield-virus"></i> Physiology &amp; Immunology</h4>
+          <ul class="semester-courses">
+            <li><span class="course-code">BIO306</span> Immunology</li>
+            <li><span class="course-code">BIO310</span> Animal Physiology</li>
+            <li><span class="course-code">BIO305</span> Plant Physiology</li>
+            <li><span class="course-code">BIO314</span> Plant Development and Biotechnology</li>
+          </ul>
+        </div>
+
+        <div class="semester-block glass-card">
+          <h4 class="semester-title"><i class="fa-solid fa-flask"></i> Chemistry &amp; Physical Sciences</h4>
+          <ul class="semester-courses">
+            <li><span class="course-code">CHM101</span> General Chemistry</li>
+            <li><span class="course-code">CHM112</span> Basic Organic Chemistry I</li>
+            <li><span class="course-code">CHM211</span> Basic Organic Chemistry II</li>
+            <li><span class="course-code">CHM204</span> Basic Inorganic Chemistry</li>
+            <li><span class="course-code">CHM221</span> Basic Physical Chemistry</li>
+            <li><span class="course-code">CHM222</span> Classical Thermodynamics</li>
+            <li><span class="course-code">PHY101</span> Mechanics</li>
+            <li><span class="course-code">PHY106</span> Quantum Physics</li>
+          </ul>
+        </div>
+
+        <div class="semester-block glass-card">
+          <h4 class="semester-title"><i class="fa-solid fa-book-open-reader"></i> Research &amp; Thesis</h4>
+          <ul class="semester-courses">
+            <li><span class="course-code">BIO501</span> MS Thesis (36 Credits)</li>
+          </ul>
+        </div>
+
+        <div class="semester-block glass-card">
+          <h4 class="semester-title"><i class="fa-solid fa-vial"></i> Laboratory &amp; Technical Training</h4>
+          <ul class="semester-courses">
+            <li><span class="course-code">BIO103</span> General Biology Lab</li>
+            <li><span class="course-code">BIO205</span> Biology Lab I</li>
+            <li><span class="course-code">BIO206</span> Biology Lab II</li>
+            <li><span class="course-code">BIO307</span> Biology Lab III</li>
+            <li><span class="course-code">BIO308</span> Biology Lab IV</li>
+            <li><span class="course-code">CHM114</span> Chemistry Lab I</li>
+            <li><span class="course-code">CHM223</span> Chemistry Lab II</li>
+            <li><span class="course-code">CHM206</span> Chemistry Lab III</li>
+            <li><span class="course-code">PHY103</span> General Physics Lab I</li>
+            <li><span class="course-code">EES207</span> Earth &amp; Env Sciences Lab</li>
+            <li><span class="course-code">BIO408</span> Bioinstrumentation</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- MOOCs / Online Certifications -->
+      <div class="moocs-container">
+        <h3 class="subsection-title">Online Certifications &amp; MOOCs</h3>
+        <div class="certificates-grid">
+          <div class="cert-card glass-card">
+            <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h4>Biology Meets Programming</h4>
+            <p class="cert-issuer">University of California San Diego (Coursera)</p>
+            <span class="cert-date">May – July 2024</span>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+            <h4>Computational Neuroscience</h4>
+            <p class="cert-issuer">University of Washington (Coursera)</p>
+            <span class="cert-date">Aug – Oct 2023</span>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+            <h4>Understanding the Brain</h4>
+            <p class="cert-issuer">University of Chicago (Coursera)</p>
+            <span class="cert-date">Mar – Apr 2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & References Section -->
+    <section id="contact" class="contact-section scroll-reveal">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Reach out for academic collaborations or research proposals</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card glass-card">
+          <h3>Contact Details</h3>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:surajc21@iiserb.ac.in">surajc21@iiserb.ac.in</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Location</h4>
+                <span>IISER Bhopal, Madhya Pradesh, India</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-github"></i>
+              <div>
+                <h4>GitHub</h4>
+                <a href="https://github.com/suraj-chauhan-21" target="_blank" rel="noopener noreferrer">github.com/suraj-chauhan-21</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic References -->
+        <div class="references-card glass-card">
+          <h3>Academic References</h3>
+          <div class="references-list">
+            <div class="ref-item">
+              <h4>Prof. Vineet K Sharma</h4>
+              <p class="ref-role">Principal Investigator, IISER Bhopal</p>
+              <a href="mailto:vineetks@iiserb.ac.in" class="ref-email"><i class="fa-solid fa-envelope"></i> vineetks@iiserb.ac.in</a>
+            </div>
+            <div class="ref-item">
+              <h4>Dr. Debasis Nayak</h4>
+              <p class="ref-role">Faculty Advisor, IISER Bhopal</p>
+              <a href="mailto:debasis@iiserb.ac.in" class="ref-email"><i class="fa-solid fa-envelope"></i> debasis@iiserb.ac.in</a>
+            </div>
+            <div class="ref-item">
+              <h4>Prof. Aasheesh Srivastava</h4>
+              <p class="ref-role">Faculty Advisor, IISER Bhopal</p>
+              <a href="mailto:asrivastava@iiserb.ac.in" class="ref-email"><i class="fa-solid fa-envelope"></i> asrivastava@iiserb.ac.in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Suraj Chauhan. All rights reserved.</p>
+      <p class="footer-sub">Designed for Bioinformatics & Meta-Omics Research Showcase.</p>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
